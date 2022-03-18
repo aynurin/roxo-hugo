@@ -52,16 +52,16 @@
         </div>
       </div>
       {{ end }}
+      {{ with .Site.Params.footer }}
       <div class="col-lg-2 col-12">
         <a href="#top" class="site-footer-widget-top">
           <img src="{{ "images/to-top.svg" | absURL }}" alt="back-to-top">
-          <p>
-            I want to 
-            <br>
-            visit again
+          <p class="site-footer-widget-description">
+            {{ .back_to_top | safeHTML }}
           </p>
         </a>
       </div>
+      {{ end }}
     </div>
   </div>
 </footer>
