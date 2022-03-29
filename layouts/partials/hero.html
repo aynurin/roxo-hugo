@@ -14,8 +14,8 @@
               <li>
                 <a href="{{ .primary_button_url | absURL }}" class="btn btn-secondary">
                   <span class="btn-area">
-                    <span data-text="{{ .primary_button }}">
-                      {{ .primary_button }}
+                    <span data-text="{{ .primary_button | safeHTML }}">
+                      {{ .primary_button | safeHTML }}
                     </span>
                   </span>
                 </a>
@@ -23,8 +23,8 @@
               <li>
                 <a href="{{ .secondary_button_url | absURL }}" class="btn btn-primary">
                   <span class="btn-area">
-                    <span data-text="{{ .secondary_button }}">
-                      {{ .secondary_button }}
+                    <span data-text="{{ .secondary_button | safeHTML }}">
+                      {{ .secondary_button | safeHTML }}
                     </span>
                   </span>
                 </a>
